@@ -3,518 +3,762 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence">
+  <meta name="description" content="EG-VQA benchmarks verifiable video question answering with grounded temporal evidence for trustworthy video understanding.">
+  <meta name="keywords" content="EG-VQA, video question answering, temporal grounding, temporal evidence, video understanding, multimodal AI, benchmark">
+  <meta name="author" content="Linpeng Huang, Weixing Chen, Zexin Chen, Yang Liu, Liang Lin">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:site_name" content="Sun Yat-sen University">
+  <meta property="og:title" content="EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence">
+  <meta property="og:description" content="EG-VQA benchmarks verifiable video question answering with grounded temporal evidence for trustworthy video understanding.">
+  <meta property="og:url" content="https://lphuangcs.github.io/EG-VQA/">
+  <meta property="og:image" content="https://lphuangcs.github.io/EG-VQA/static/images/teaser.png">
+  <meta property="og:image:alt" content="EG-VQA project preview">
+  <meta property="article:published_time" content="2026-06-20T00:00:00.000Z">
+  <meta property="article:author" content="Linpeng Huang">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="video question answering">
+  <meta property="article:tag" content="temporal grounding">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence">
+  <meta name="twitter:description" content="EG-VQA benchmarks verifiable video question answering with grounded temporal evidence for trustworthy video understanding.">
+  <meta name="twitter:image" content="https://lphuangcs.github.io/EG-VQA/static/images/teaser.png">
+  <meta name="twitter:image:alt" content="EG-VQA project preview">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="citation_title" content="EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence">
+  <meta name="citation_author" content="Huang, Linpeng">
+  <meta name="citation_author" content="Chen, Weixing">
+  <meta name="citation_author" content="Chen, Zexin">
+  <meta name="citation_author" content="Liu, Yang">
+  <meta name="citation_author" content="Lin, Liang">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://lphuangcs.github.io/EG-VQA/static/pdfs/paper.pdf">
+
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
+  <style>
+    :root {
+      --eg-ink: #1f2937;
+      --eg-muted: #5f6b7a;
+      --eg-blue: #2563eb;
+      --eg-blue-dark: #1e3a8a;
+      --eg-bg: #f7f9fc;
+      --eg-line: #d9e2ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--eg-ink);
+      background: #ffffff;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--eg-blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(100% - 40px, 1120px);
+      margin: 0 auto;
+    }
+
+    .is-max-desktop {
+      max-width: 1080px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero-body {
+      padding: 56px 0;
+    }
+
+    .publication-title {
+      max-width: 1160px;
+      margin: 0 auto 28px;
+      color: var(--eg-ink);
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: clamp(40px, 5vw, 60px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .publication-authors {
+      margin: 6px 0;
+      color: #0f172a;
+      font-size: 25px;
+      line-height: 1.35;
+    }
+
+    .author-meta {
+      margin: 10px 0 0;
+    }
+
+    .author-meta .publication-authors {
+      margin: 3px 0;
+    }
+
+    .author-block {
+      display: inline-block;
+      margin: 0 8px;
+    }
+
+    .star-mark {
+      position: relative;
+      top: -0.18em;
+      line-height: 0;
+    }
+
+    .eql-cntrb {
+      display: block;
+      margin: 3px 0;
+      color: #7b8794;
+      font-size: 19px;
+      font-style: normal;
+      line-height: 1.35;
+    }
+
+    .publication-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 28px;
+    }
+
+    .link-block {
+      display: inline-flex;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 24px;
+      border: 0;
+      border-radius: 999px;
+      background: #303030;
+      color: #ffffff;
+      box-shadow: none;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .button:hover {
+      background: #1f1f1f;
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: none;
+    }
+
+    .button.is-light {
+      background: #eef2f7;
+      color: #334155;
+      box-shadow: inset 0 0 0 1px var(--eg-line);
+    }
+
+    .button.is-light:hover {
+      background: #e2e8f0;
+      color: #1f2937;
+    }
+
+    .button .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+    }
+
+    .teaser .hero-body {
+      padding-top: 46px;
+    }
+
+    .teaser img {
+      display: block;
+      margin: 0 auto 22px;
+      border-radius: 6px;
+    }
+
+    .subtitle {
+      max-width: 920px;
+      margin: 0 auto;
+      color: var(--eg-muted);
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .figure-caption {
+      max-width: 1080px;
+      margin: 10px auto 0;
+      color: #374151;
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .section {
+      padding: 56px 0;
+    }
+
+    .is-light {
+      background: var(--eg-bg);
+      border-top: 1px solid var(--eg-line);
+      border-bottom: 1px solid var(--eg-line);
+    }
+
+    .title {
+      margin: 0 0 22px;
+      color: var(--eg-ink);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .title.is-3,
+    h2.title {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: center;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .is-four-fifths {
+      max-width: 900px;
+    }
+
+    .has-text-centered {
+      text-align: center;
+    }
+
+    .has-text-justified {
+      text-align: justify;
+    }
+
+    .content {
+      color: #111827;
+      font-size: 18px;
+    }
+
+    .content p {
+      margin: 0 0 18px;
+    }
+
+    .content ul {
+      max-width: 860px;
+      margin: 20px auto 0;
+      padding-left: 26px;
+      text-align: left;
+    }
+
+    .content li {
+      margin: 10px 0;
+    }
+
+    .benchmark-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 18px;
+    }
+
+    .benchmark-table {
+      width: 100%;
+      min-width: 940px;
+      border-collapse: collapse;
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.35;
+      color: #1f2937;
+    }
+
+    .benchmark-table caption {
+      caption-side: top;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1f2937;
+      text-align: center;
+    }
+
+    .benchmark-table th,
+    .benchmark-table td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #d8e0ea;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .benchmark-table th:first-child,
+    .benchmark-table td:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .benchmark-table thead th {
+      border-top: 2px solid #1f2937;
+      border-bottom: 1.5px solid #1f2937;
+      font-weight: 800;
+    }
+
+    .benchmark-table tbody tr:last-child td {
+      border-bottom: 2px solid #1f2937;
+    }
+
+    .benchmark-table .ours {
+      background: #eef2f7;
+      font-weight: 700;
+    }
+
+    .benchmark-note {
+      margin-top: 10px;
+      color: #64748b;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .benchmark-figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    h2.title.benchmark-title {
+      text-align: left;
+    }
+
+    .benchmark-figure + .benchmark-figure {
+      margin-top: 26px;
+    }
+
+    iframe {
+      display: block;
+      max-width: 100%;
+      border: 1px solid var(--eg-line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .bibtex-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .bibtex-header .title {
+      margin: 0;
+      text-align: left;
+    }
+
+    .copy-bibtex-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border: 1px solid var(--eg-line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--eg-ink);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    pre {
+      overflow-x: auto;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 26px;
+      border-radius: 0;
+      background: #f5f5f5;
+      color: #111827;
+      text-align: left;
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    .footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--eg-line);
+      color: var(--eg-muted);
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .scroll-to-top {
+      display: none;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        font-size: 13px;
+      }
+
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero-body {
+        padding: 38px 0;
+      }
+
+      .publication-title {
+        font-size: 34px;
+      }
+
+      .publication-authors {
+        font-size: 20px;
+      }
+
+      .button {
+        min-height: 44px;
+        padding: 0 18px;
+        font-size: 17px;
+      }
+
+      .section {
+        padding: 44px 0;
+      }
+
+      .subtitle {
+        font-size: 19px;
+      }
+
+      .figure-caption {
+        font-size: 15px;
+      }
+
+      .title.is-3,
+      h2.title {
+        font-size: 28px;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence",
+    "description": "EG-VQA benchmarks verifiable video question answering with grounded temporal evidence for trustworthy video understanding.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Linpeng Huang",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Sun Yat-sen University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Weixing Chen",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Sun Yat-sen University"
         }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
       },
       {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "@type": "Person",
+        "name": "Zexin Chen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Shenzhen University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Yang Liu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Sun Yat-sen University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Liang Lin",
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "Sun Yat-sen University"
+          },
+          {
+            "@type": "Organization",
+            "name": "Peng Cheng Laboratory"
+          }
+        ]
       }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    ],
+    "datePublished": "2026-06-20",
+    "url": "https://lphuangcs.github.io/EG-VQA/",
+    "image": "https://lphuangcs.github.io/EG-VQA/static/images/teaser.png",
+    "keywords": ["EG-VQA", "video question answering", "temporal grounding", "video understanding", "multimodal AI"],
+    "isAccessibleForFree": true,
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://lphuangcs.github.io/EG-VQA/"
+    }
   }
   </script>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence</h1>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="author-meta">
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">Linpeng Huang<sup>1<span class="star-mark">*</span></sup></span>
+                  <span class="author-block">Weixing Chen<sup>1<span class="star-mark">*</span></sup></span>
+                  <span class="author-block">Zexin Chen<sup>3</sup></span>
+                  <span class="author-block">Yang Liu<sup>1†</sup></span>
+                  <span class="author-block">Liang Lin<sup>1,2</sup></span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>Sun Yat-sen University</span>
+                  <span class="author-block"><sup>2</sup>Peng Cheng Laboratory</span>
+                  <span class="author-block"><sup>3</sup>Shenzhen University</span>
+                </div>
+                <span class="eql-cntrb"><small><sup>*</sup>Equal Contribution&nbsp;&nbsp;<sup>†</sup>Corresponding Author</small></span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Paper</span>
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a href="https://github.com/HCPLab-SYSU/EG-VQA" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Github</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark" title="arXiv link will be updated after release">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="static/images/teaser.png" alt="EG-VQA overview" style="width: 100%; max-height: 560px; object-fit: contain;" onerror="this.style.display='none'; document.getElementById('teaser-placeholder').style.display='block';">
+          <h2 id="teaser-placeholder" class="subtitle has-text-centered" style="display: none;">
+            Upload your main overview figure as <strong>static/images/teaser.png</strong>.
+          </h2>
+          <p class="figure-caption">
+            <strong>Overview of the proposed evidence-grounded VideoQA paradigm.</strong>
+            (a) Existing VideoQA focuses on answer-only prediction, which can lead to correct answers without grounding in relevant video evidence. (b) Our formulation requires models to generate temporally localized evidence alongside answers, enabling verifiable and interpretable reasoning.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Recent advances in Video Large Language Models (Video-LLMs) have yielded promising performance on video question answering (VideoQA). Nevertheless, existing benchmarks are predominantly evaluated through answer correctness, while the grounding of predictions in relevant video evidence remains largely unexamined. This disconnect between answer generation and evidence understanding motivates the construction of the Evidence-Grounded Video Question Answering Benchmark (EG-VQA), an open-ended evaluation protocol in which each QA pair is explicitly annotated with supporting temporal evidence, thereby requiring joint reasoning and precise evidence localization. EG-VQA is comprised of 2,067 videos and 11,838 QA pairs with fine-grained evidence annotations. To evaluate predicted evidence, Evidence-Grounded F1 (EG-F1) is introduced as a unified metric in which temporal alignment and semantic consistency against ground-truth evidence are jointly measured. Experimental evaluation reveals that even strong proprietary models struggle to accurately ground their predictions, exposing a fundamental discrepancy between answer correctness and faithful evidence localization. To bridge this gap, EG-Reasoner, an evidence-grounded reasoning model trained with explicit supervision, is proposed. State-of-the-art performance is achieved among open-source models, with results competitive against proprietary systems, particularly pronounced gains are observed on reasoning-intensive tasks such as counterfactual questions. These findings demonstrate that scaling alone is insufficient for robust video understanding and that structured evidence supervision is essential for the development of more reliable and interpretable VideoQA systems.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 benchmark-title">Benchmark Overview</h2>
+        <div class="benchmark-figure">
+          <img src="static/images/comparation.png" alt="Comparison between our EG-VQA and existing VideoQA benchmarks">
+          <p class="figure-caption">
+            <strong>Comparison between our EG-VQA and existing VideoQA benchmarks.</strong>
+          </p>
+        </div>
+        <div class="benchmark-figure">
+          <img src="static/images/dataset.png" alt="Overview of EG-VQA statistics and representative QA examples">
+          <p class="figure-caption">
+            <strong>Overview of EG-VQA statistics and representative QA examples.</strong>
+            EG-VQA contains 2,067 videos and 11,838 QA pairs, split in a video-disjoint manner into 8,949 training and 2,889 test samples. It covers four reasoning categories: descriptive, temporal, causal, and counterfactual questions, progressing from directly observable video content to event ordering, causal inference, and hypothetical reasoning grounded in specific video segments.
+          </p>
+        </div>
+        <div class="benchmark-figure">
+          <img src="static/images/Dataset%20pipeline.jpg" alt="The construction process of EG-VQA">
+          <p class="figure-caption">
+            <strong>Construction Pipeline.</strong>
+            EG-VQA is constructed through a pipeline that combines video data curation, reasoning-oriented question-answer generation, prompt refinement, and two-stage quality control. Each QA pair is paired with temporally localized evidence.
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </section>
 
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 benchmark-title">Model</h2>
+        <div class="benchmark-figure">
+          <img src="static/images/model.jpg" alt="Overview of the EG-Reasoner training framework">
+          <p class="figure-caption">
+            <strong>EG-Reasoner Training Framework.</strong>
+            Given a video and question, EG-Reasoner learns to produce structured responses that explicitly organize temporal evidence, reasoning, and the final answer. The model is optimized with reinforcement learning using a composite reward that jointly evaluates response format, answer correctness, and evidence grounding. During training, GRPO updates the policy by comparing multiple sampled responses, encouraging the model to generate faithful answers supported by localized video evidence.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 benchmark-title">Experiments</h2>
+        <div class="benchmark-figure">
+          <img src="static/images/experiment.png" alt="Experimental comparison of EG-Reasoner with commercial and open-source Video-LLMs">
+          <p class="figure-caption">
+            We compare the performance of EG-Reasoner with commercial large multimodal models and recent open-source Video-LLMs on EG-VQA. EG-Reasoner outperforms other open-source models in terms of both answer accuracy and evidence grounding.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 benchmark-title">Qualitative Analysis</h2>
+        <div class="benchmark-figure">
+          <img src="static/images/case.jpg" alt="Qualitative comparison between EG-Reasoner and the base model">
+          <p class="figure-caption">
+            As videos are analyzed, EG-Reasoner localizes key evidence regions and decomposes complex events into fine-grained temporal reasoning steps. Compared with the base model, it produces answers that are better grounded in the video content and less affected by loosely related context or hallucinated intermediate steps.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@misc{huang2026egvqa,
+  title={EG-VQA: Benchmarking Verifiable Video Question Answering with Grounded Temporal Evidence},
+  author={Huang, Linpeng and Chen, Weixing and Chen, Zexin and Liu, Yang and Lin, Liang},
+  year={2026},
+  url={https://lphuangcs.github.io/EG-VQA/}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+  <script>
+    function copyBibTeX() {
+      const code = document.getElementById("bibtex-code").innerText;
+      navigator.clipboard.writeText(code);
+    }
+  </script>
+</body>
+</html>
